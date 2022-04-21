@@ -75,9 +75,9 @@ public class Inicio extends AppCompatActivity implements CalendarView.OnDateChan
         items[2] = "Cancelar";
 
         int dia,mes,anio;
-        dia = i;
+        dia = i2;
         mes = i1+1;
-        anio = i2;
+        anio = i;
         //por defecto el mes inicia en cero por lo que aumentamos uno
 
         constructor.setTitle("Seleccione una opcion")
