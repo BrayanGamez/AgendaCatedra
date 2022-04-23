@@ -93,12 +93,21 @@ public class Inicio extends AppCompatActivity implements CalendarView.OnDateChan
                             bundle.putInt("mes",mes);
                             bundle.putInt("anio",anio);
                             bundle.putString("usuario",Correo);
+                            bundle.putString("correo",Correo);
                             intent.putExtras(bundle);
                             startActivity(intent);
                         }
                         else if(i==1)
                         {
                             //Vemos los eventos de ese dia
+                            Intent intent = new Intent(getApplication(),ver_eventos.class);
+                            Bundle bundle = new Bundle();
+                            bundle.putInt("dia",dia);
+                            bundle.putInt("mes",mes);
+                            bundle.putInt("anio",anio);
+                            bundle.putString("correo",Correo);
+                            intent.putExtras(bundle);
+                            startActivity(intent);
                         }
                         else
                         {

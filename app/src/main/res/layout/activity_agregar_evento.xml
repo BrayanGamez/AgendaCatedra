@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:clickable="false"
-                    android:editable="false"
+                    android:editable="true"
                     android:focusableInTouchMode="false"
                     android:textAlignment="center">
 
@@ -119,7 +119,6 @@
                     android:layout_width="188dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:focusableInTouchMode="false"
                     android:textAlignment="center">
 
                 </EditText>
@@ -146,7 +145,6 @@
                     android:layout_width="188dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:focusableInTouchMode="false"
                     android:textAlignment="center">
 
                 </EditText>
