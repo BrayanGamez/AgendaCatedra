@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/henry/OneDrive/DOCUMENTOS/GitHub/AgendaCatedra/app/src/main/res/drawable/buttonrounded.xml" value="0.1" />
+        <entry key="..\:/Users/henry/OneDrive/DOCUMENTOS/GitHub/AgendaCatedra/app/src/main/res/layout/activity_agregar_evento.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/henry/OneDrive/DOCUMENTOS/GitHub/AgendaCatedra/app/src/main/res/layout/activity_inicio.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/henry/OneDrive/DOCUMENTOS/GitHub/AgendaCatedra/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/henry/OneDrive/DOCUMENTOS/GitHub/AgendaCatedra/app/src/main/res/layout/activity_ver_eventos.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/henry/OneDrive/DOCUMENTOS/GitHub/AgendaCatedra/app/src/main/res/layout/toolbar.xml" value="0.17028985507246377" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/AgendaCatedra/app/src/main/res/layout/activity_agregar_evento.xml" value="0.25" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/AgendaCatedra/app/src/main/res/layout/activity_inicio.xml" value="0.25" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/AgendaCatedra/app/src/main/res/layout/activity_main.xml" value="0.22" />
