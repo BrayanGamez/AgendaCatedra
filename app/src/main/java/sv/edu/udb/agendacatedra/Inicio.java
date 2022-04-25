@@ -49,8 +49,6 @@ public class Inicio extends AppCompatActivity implements CalendarView.OnDateChan
         txtNombre.setText(Nombre);
         Picasso.get().load(Img).into(imgFoto);
     }
-
-
     public void onClick(View v) {
         switch (v.getId()) {
             // ...
