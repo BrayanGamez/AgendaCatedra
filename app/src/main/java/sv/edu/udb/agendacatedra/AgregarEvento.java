@@ -65,7 +65,6 @@ public class AgregarEvento extends AppCompatActivity implements View.OnClickList
             catch (Exception e)
             {
                 Toast.makeText(getApplication(),"Error: "+e.getMessage(),Toast.LENGTH_SHORT).show();
-
             }
             this.finish();
         }

@@ -37,7 +37,6 @@ public class ver_eventos extends AppCompatActivity implements AdapterView.OnItem
         DBSQLite bd = new DBSQLite(getApplication(),"Agenda",null,1);
         db= bd.getReadableDatabase();
 
-
         String cadena = Dia+"-"+Mes+"-"+anio;
         String sqlQuery = "select * from eventos where fecha = '"+cadena+"' and usuario ='"+Correo+"'";
         Cursor c;
