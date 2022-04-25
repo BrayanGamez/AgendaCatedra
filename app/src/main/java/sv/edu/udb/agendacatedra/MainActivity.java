@@ -32,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
          sesion = new Logeo(this);
         findViewById(R.id.sign_in_button).setOnClickListener(this::onClick);
-
-
     }
 
     @Override
