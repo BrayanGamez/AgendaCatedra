@@ -28,7 +28,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class AgregarEvento extends AppCompatActivity implements View.OnClickListener, OnMapReadyCallback {
+public class AgregarEvento extends AppCompatActivity implements View.OnClickListener, OnMapReadyCallback, GoogleMap.OnMyLocationButtonClickListener, GoogleMap.OnMyLocationClickListener {
     private GoogleMap mMap;
 
     private int Dia;
@@ -125,8 +125,10 @@ public void onMapReady(GoogleMap googleMap) {
         return;
     }
     mMap.setMyLocationEnabled(true);
+    mMap.setOnMyLocationButtonClickListener(this);
+    mMap.setOnMyLocationClickListener(this);
 
-    mMap.getUiSettings().setMyLocationButtonEnabled(false);
+    mMap.getUiSettings().setMyLocationButtonEnabled(true);
     //Aca es donde busco el contenedor de google maps en caso de que este en la activity actual, en caos de no servir este codigo Ver el comentado de arriba
     LocationManager locationManager = (LocationManager) AgregarEvento.this.getSystemService(Context.LOCATION_SERVICE);
     LocationListener locationListener = new LocationListener() {
@@ -159,4 +161,14 @@ public void onMapReady(GoogleMap googleMap) {
 
 }
 
+    @Override
+    public boolean onMyLocationButtonClick() {
+        Toast.makeText(this, "Boton de ubicacion clickead", Toast.LENGTH_SHORT).show();
+        return false;
+    }
+
+    @Override
+    public void onMyLocationClick(@NonNull Location location) {
+        Toast.makeText(this, "Ubicacion actual:\n" + location, Toast.LENGTH_LONG).show();
+    }
 }

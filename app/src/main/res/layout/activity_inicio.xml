@@ -86,6 +86,7 @@
         android:textSize="34sp"
         android:textStyle="bold"
         android:tooltipText="Agregar Actividad"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/calendario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
