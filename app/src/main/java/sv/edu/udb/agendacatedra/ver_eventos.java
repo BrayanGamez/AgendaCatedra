@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -28,6 +29,7 @@ public class ver_eventos extends AppCompatActivity implements AdapterView.OnItem
     private int Mes;
     private int anio;
     private String Correo;
+    private TextView txtVerEventos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,7 @@ public class ver_eventos extends AppCompatActivity implements AdapterView.OnItem
         setContentView(R.layout.activity_ver_eventos);
         listview = (ListView) findViewById(R.id.listEvents);
         listview.setOnItemLongClickListener(this);
+        txtVerEventos = (TextView) findViewById(R.id.txtBarraVerEventos);
         Dia =  getIntent().getExtras().getInt("dia");
         Mes = getIntent().getExtras().getInt("mes");
         anio = getIntent().getExtras().getInt("anio");
@@ -44,6 +47,7 @@ public class ver_eventos extends AppCompatActivity implements AdapterView.OnItem
         db= bd.getReadableDatabase();
 
         String cadena = Dia+"-"+Mes+"-"+anio;
+        txtVerEventos.setText("Actividades "+cadena.replace("-","/"));
         String sqlQuery = "select * from eventos where fecha = '"+cadena+"' and usuario ='"+Correo+"'";
         Cursor c;
 

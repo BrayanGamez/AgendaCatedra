@@ -105,18 +105,6 @@ public class AgregarEvento extends AppCompatActivity implements View.OnClickList
             this.finish();
         }
     }
-/*
-    @Override
-    public void onMapReady(@NonNull GoogleMap googleMap) {
-        mMap = googleMap;
-        // agregando el marco y las posiciones
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions()
-                .position(sydney)
-                .title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,10));
-    }
- */
 @Override
 public void onMapReady(GoogleMap googleMap) {
     mMap = googleMap;
@@ -163,7 +151,7 @@ public void onMapReady(GoogleMap googleMap) {
 
     @Override
     public boolean onMyLocationButtonClick() {
-        Toast.makeText(this, "Boton de ubicacion clickead", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Active la ubicacion", Toast.LENGTH_SHORT).show();
         return false;
     }
 

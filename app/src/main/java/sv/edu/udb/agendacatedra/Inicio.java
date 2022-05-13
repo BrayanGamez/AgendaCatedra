@@ -38,6 +38,7 @@ public class Inicio extends AppCompatActivity implements CalendarView.OnDateChan
         calendario = (CalendarView) findViewById(R.id.calendario);
         calendario.setOnDateChangeListener(this);
 
+
         txtNombre = findViewById(R.id.txtNombre);
         imgFoto = findViewById(R.id.imgFoto);
         findViewById(R.id.btnCerrarSesion).setOnClickListener(this::onClick);
